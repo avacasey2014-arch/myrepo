@@ -66,10 +66,10 @@ fit <- optim(inits, nll_lm, data=df,
              hessian=TRUE)
 sqrt(diag(solve(fit$hessian)))[1:4]
 
-#4
+# Exercise 4
+
 mod <- lm(y ~ x1 + x2 + x3, data=df)
 
 coef(mod)
 
 summary(mod)$sigma
-
